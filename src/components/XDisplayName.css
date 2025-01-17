@@ -1,0 +1,29 @@
+.form-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; /* Center the form horizontally */ 
+    align-items: center; /* Center the form vertically */ 
+    height: 100vh;
+}
+
+h2{
+    text-align: left;
+    margin-left: -55px;
+}
+
+.form-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    /* width: 100%; */
+    height:auto;
+}
+
+.button{
+    margin-top: 10px;
+}
+
+p{
+    text-align: left;
+}
