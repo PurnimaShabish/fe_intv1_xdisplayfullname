@@ -4,11 +4,13 @@
     justify-content: flex-start; /* Center the form horizontally */ 
     align-items: center; /* Center the form vertically */ 
     height: 100vh;
+    font-family:"Robot";
 }
 
 h2{
     text-align: left;
-    margin-left: -55px;
+    margin-left: -65px;
+    /* font-family:"Robot"; */
 }
 
 .form-box{
@@ -22,8 +24,10 @@ h2{
 
 .button{
     margin-top: 10px;
+    width: 30%;
 }
 
 p{
     text-align: left;
+    margin-left: -55px;
 }

@@ -6,17 +6,17 @@ export default function XDisplayName(){
     const [showFullName, setShowFullName] = useState(false);
     const [isValid, setIsValid] = useState(true);
 
-    const nameValidation = (value) => {
-        const nameRegex = /^[A-Za-z\s\-]{2,50}$/;
-        return (nameRegex.test(value));
-    }
+    // const nameValidation = (value) => {
+    //     const nameRegex = /^[A-Za-z\s\-]{2,50}$/;
+    //     return (nameRegex.test(value));
+    // }
 
     const handleChange = (e) => {
         setShowFullName(false);
 
         const {name,value} = e.target;
 
-        setIsValid(nameValidation(value));
+        // setIsValid(nameValidation(value));
         setFormData((prev) => ({...prev,[name]:value}));
 
         console.log(formData);
@@ -54,11 +54,11 @@ export default function XDisplayName(){
                             required></input>
                 </div>
 
-                <button className="button">Submit</button>
+                <button className="button" type="submit">Submit</button>
             
             </form>
             {(!isValid)? (<p style={{color:"red"}}>Name fields should contain only alphabets, spaces and hypen.</p>) : null}
-            {(isValid && showFullName)? (<p> Full Name : {formData.firstName} {formData.lastName}</p>) : null}
+            {(isValid && showFullName)? (<p> Full Name: {formData.firstName} {formData.lastName}</p>) : null}
         </div>
     )
 
